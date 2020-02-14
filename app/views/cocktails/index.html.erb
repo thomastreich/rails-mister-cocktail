@@ -1,0 +1,19 @@
+<div class="btn btn-success"><%= link_to "Create your own Cocktail", new_cocktail_path %></div>
+
+<div class="container text-center">
+  <h1> All our Cocktails </h1>
+  <div class="row">
+    <% @cocktails.each do |cocktail| %>
+      <div class="col-md-4 col-xs-12 p-0">
+        <div class="d-flex">
+          <div class="card m-4 text-center">
+            <img src="<%= cocktail.image_url %>" alt="...">
+            <p class="cocktail_name w-100" >
+              <%= cocktail.name %>
+            </p>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

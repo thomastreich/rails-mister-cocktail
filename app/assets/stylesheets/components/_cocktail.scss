@@ -1,0 +1,35 @@
+.card {
+  font-family: 'Sriracha', cursive;
+  text-align: center;
+  height: 300px;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+}
+
+.cocktail_name {
+  position: absolute;
+  top: 140px;
+  color: white;
+}
+
+img {
+  object-fit: cover;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.container h1 {
+  padding-top: 15px;
+  color: white;
+  font-family: 'Sriracha', cursive;
+  }
+
+.btn-success {
+  position: absolute;
+  right: 60px;
+}
+
+.wrapper {
+  padding: 30px;
+}

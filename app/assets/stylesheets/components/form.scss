@@ -1,0 +1,23 @@
+.wrapper-form {
+  // width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+}
+
+.form-group {
+  width: 50%;
+}
+
+.btn-danger {
+  background-color: #2d2aff;
+  border: none;
+  transition: 0.5s;
+  &:hover {
+    border: none;
+    background-color: #2d2aff;
+    transform: scale(1.1);
+  }
+}
