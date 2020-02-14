@@ -1,0 +1,22 @@
+<%= cl_image_tag(@cocktail.photo.key, width: 400, height: 300, crop: :fill) %>
+<div class="btn btn-info">
+  <%= link_to 'Back to list of cocktails', cocktails_path %>
+</div>
+<div class="btn btn-warning">
+  <%= link_to 'Delete this cocktail', cocktails_path %>
+</div>
+
+<form action="text" class="description_text">
+  <div class="titre_name">
+    <h5><strong>Name :</strong> <%= @cocktail.name %></h5>
+      <br>
+    <h5><strong>Description : </strong></h5>
+     </div>
+    <ul>
+      <% @cocktail.doses.each do |dose| %>
+       <li>
+        <%= dose.description %> <%= dose.ingredient.name %>
+       </li>
+      <% end %>
+    </ul>
+</form>

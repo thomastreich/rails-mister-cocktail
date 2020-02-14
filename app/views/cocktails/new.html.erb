@@ -1,4 +1,4 @@
-<form>
+<!-- <form>
   <div class="wrapper-form">
     <div class="form-group">
       <label for="exampleInputEmail1">ingredients</label>
@@ -11,5 +11,11 @@
     </div>
     <button type="submit" class="btn btn-danger">Add ingredient</button>
   </div>
-</form>
+</form> -->
+
+<%= simple_form_for(@cocktail) do |f| %>
+  <%= f.input :name  %>
+  <%= f.input :photo, as: :file %>
+  <%= f.submit %>
+<% end %>
 

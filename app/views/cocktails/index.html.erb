@@ -7,9 +7,13 @@
       <div class="col-md-4 col-xs-12 p-0">
         <div class="d-flex">
           <div class="card m-4 text-center">
-            <img src="<%= cocktail.image_url %>" alt="...">
+            <% if cocktail.photo.attached? %>
+              <%= cl_image_tag(cocktail.photo.key, height: 300, crop: :fill) %>
+            <% else %>
+              <img src="<%= cocktail.image_url %>" alt="...">
+            <% end %>
             <p class="cocktail_name w-100" >
-              <%= cocktail.name %>
+              <%= link_to cocktail.name, cocktail_path(cocktail) %>
             </p>
           </div>
         </div>

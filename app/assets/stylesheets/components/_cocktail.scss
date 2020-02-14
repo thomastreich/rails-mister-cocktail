@@ -11,6 +11,7 @@
   position: absolute;
   top: 140px;
   color: white;
+  text-decoration: none;
 }
 
 img {
@@ -28,8 +29,42 @@ img {
 .btn-success {
   position: absolute;
   right: 60px;
+  text-decoration: none;
 }
 
 .wrapper {
   padding: 30px;
+}
+
+.btn-info {
+ position: absolute;
+ left: 30px;
+ top: 347px;
+ cursor: pointer;
+ background-color: #22272B;
+ border-color: #22272B;
+}
+
+.description_text {
+  position: absolute;
+  right: 50px;
+  top: 30px;
+  width: 50%;
+  p {
+    color: white;
+  }
+}
+
+.btn-warning{
+ position: absolute;
+ left: 258px;
+ top: 347px;
+ cursor: pointer;
+ background-color: #22272B;
+ border-color: #22272B;
+}
+
+.titre_name {
+  font-family: Hawaii 5-0, sans-serif;
+  color: #377AB1;
 }
